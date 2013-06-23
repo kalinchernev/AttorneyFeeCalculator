@@ -34,6 +34,7 @@ $(document).ready(function() {
 		$('input[id=value-vat]').val(vat);
 		$('input[id=value-final]').val(overall);
 	});
+});
 
 function basicCalculation(valueCalculation) {
 	if (valueCalculation == 0 || valueCalculation == null) {
@@ -70,13 +71,17 @@ function advancedCalculation(valueCalculation) {
 }
 
 function vatCalculate(valueCalculation) {
-	return valueCalculation*0.2;
+	if (valueCalculation == 'Моля, въведете стойност') {
+		return 'Въведете материален интерес';
+	} else {
+		return valueCalculation*0.2;
+	}
 }
 
 function overallCalculate(valueCalculation) {
-	return valueCalculation*1.2;
+	if (valueCalculation == 'Моля, въведете стойност') {
+		return 'Въведете материален интерес';
+	} else {
+		return valueCalculation*1.2;
+	}
 }
-
-currency = ' лева';
-
-});
