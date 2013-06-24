@@ -2,4 +2,4 @@ Todo list
 - English version
 - Reset button
 - Price fields to round decimals second point
-- Better drop-down type of process
+- String input error messages
