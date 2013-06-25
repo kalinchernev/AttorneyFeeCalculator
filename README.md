@@ -5,7 +5,7 @@ Simplistic calculator which will tell you how much money you'll have to pay to y
 
 Just enter the amount of money the process will cost, select what kind of process it is, and you'll receive information about the minimum attorney fee, VAT, and overall price for the attorney service.
 
-Currently, the app is in Bulgarian.
+The app is available in English and Bulgarian.
 
 Screenshot
 =====================
