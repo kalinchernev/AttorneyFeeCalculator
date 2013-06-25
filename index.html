@@ -5,24 +5,26 @@
 	<script src="js/jquery-1.10.1.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/calculator.js"></script>
+	<script src="js/translator.js"></script>
 	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<form method='get' class="form-calculator">
-		<h2 class="form-calculator-heading">Калкулатор</h2>
-		<label for='value-input'>Материален интерес: </label>
-		<input type='text' value='' name='value-input' id='value-input' placeholder='Въведете стойност в лв.' class='input-block-level'>
+		<button type="button" class="translate-english">English</button>
+		<h2 class="form-calculator-heading translateable">Калкулатор</h2>
+		<label for="value-input" class="translateable">Материален интерес: </label>
+		<input type='text' value='' name='value-input' id='value-input' placeholder='Въведете стойност в лв.' class='input-block-level translateable'>
 		<span class='value-input suffix'>лева</span>
 		<br>
 		<label for='selectlist-value'>Тип процесуално представителство:</label>
 		<select name='select-list-value' id='selectlist-value'>
-		  <option value='civilProcess'>Граждански дела</option>
-		  <option value='adminProcess'>Административни дела</option>
-		  <option value='execProcess'>Изпълнителни дела</option>
+		  <option value='civilProcess' class="translateable">Граждански дела</option>
+		  <option value='adminProcess' class="translateable">Административни дела</option>
+		  <option value='execProcess' class="translateable">Изпълнителни дела</option>
 		</select>
 		<br>
-		<button id='input-button' class="btn btn-large btn-info" type="submit">Пресметни</button>
+		<button id='input-button' class="btn btn-large btn-info translateable" type="submit">Пресметни</button>
 		<br>
 		<br>
 		<fieldset>
